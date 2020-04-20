@@ -1,0 +1,22 @@
+<html>
+
+<body>
+  <script src='./deps/require.js'></script>
+  <script>
+    var md3 = require('./deps/md3');
+
+    function process(data) {
+      var m = md3.load(data);
+      console.log(m);
+    }
+
+    fetch('./res/models/players/arachnatron/head.MD3', {
+        mode: 'no-cors'
+      })
+      .then(response => response.arrayBuffer())
+      .then(process)
+      .catch(error => console.error(error));
+  </script>
+</body>
+
+</html>
