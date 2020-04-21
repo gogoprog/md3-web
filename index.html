@@ -1,6 +1,24 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>whiplash md3 viewer</title>
+  <script src="./deps/whiplash/deps/phaser.js"></script>
+  <script src="./deps/whiplash/deps/dragonBones.js"></script>
+  <script src="./deps/whiplash/deps/haxe-babylon/lib/babylon.max.js"></script>
+  <script src="./deps/whiplash/deps/jquery-3.3.1.min.js"></script>
+  <style>
+    html,
+    body {
+      width: 800px;
+      height: 600px !important;
+    }
+  </style>
+</head>
 
 <body>
+  <script src="build/generated.js"></script>
   <script src='./deps/require.js'></script>
   <script>
     var md3 = require('./deps/md3');
